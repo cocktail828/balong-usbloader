@@ -1,7 +1,15 @@
 # usbloader
-a simple tool to burn Hisilicon bootloader modems(4G, 5G serial modems)
+>a simple tool to burn Hisilicon bootloader (4G, 5G serial modems)
 
-operate log
+## introduce
+代码根据usb抓包逆向而获取。海思私有协议的实现.仅用于测试交流，不用于商业目的！
+(The code is an implementation of Hisilicon private protocol which comes from the analyzation of USBMON. Anyone can use this but not for commercial purposes)
+
+## what to do next?
+很重要！ 在烧写完bootloader后，modem将转为fastboot模式，然后用fastboot继续烧写！
+(Much important! The modem will switch into fastboot mode after burning bootloader, so we can continue with fastboot tool!)
+
+## operation log
 ```bash
 sh-5.0# ./usbloader usbloader.bin /dev/ttyUSB0
 [2020-06-22 11:45:41] info: bootloader: usbloader.bin, device /dev/ttyUSB0
