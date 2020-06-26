@@ -1,5 +1,5 @@
 # usbloader
->a simple tool to burn Hisilicon bootloader (4G, 5G serial modems)
+>a simple tool to burn Hisilicon bootloader (4G, 5G series modems)
 
 ## introduce
 代码根据usb抓包逆向而获取。海思私有协议的实现.仅用于测试交流，不用于商业目的！
